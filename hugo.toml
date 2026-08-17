@@ -1,0 +1,15 @@
+baseURL = 'https://USERNAME.github.io/dance-of-the-compilers/'
+languageCode = 'en-us'
+title = 'Dance of the Compilers'
+
+[params]
+  description = 'From algebra to silicon.'
+  author = 'Augi'
+
+[markup]
+  [markup.highlight]
+    style = 'github-dark'
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

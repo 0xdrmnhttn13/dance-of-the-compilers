@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article class="post">
+  <a class="back" href="{{ .Site.Home.RelPermalink }}">← Notes</a>
+  <time>{{ .Date.Format "January 2, 2006" }}</time>
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+  <div class="content">{{ .Content }}</div>
+</article>
+{{ end }}

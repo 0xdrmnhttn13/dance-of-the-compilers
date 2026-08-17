@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="hero">
+  <p class="eyebrow">LEARNING NOTES ON COMPUTATION</p>
+  <h1>Dance of the<br>Compilers</h1>
+  <p class="lede">Notes from learning compilers, AI systems, quantum computing, mathematics, and the machinery underneath them.</p>
+</section>
+<section>
+  <h2>Notes</h2>
+  <div class="post-list">
+  {{ range where .Site.RegularPages "Section" "posts" }}
+    <article>
+      <time>{{ .Date.Format "2006-01-02" }}</time>
+      <div><a href="{{ .RelPermalink }}">{{ .Title }}</a><p>{{ .Description }}</p></div>
+    </article>
+  {{ end }}
+  </div>
+</section>
+{{ end }}
