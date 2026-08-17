@@ -1,6 +1,6 @@
-baseURL = 'https://USERNAME.github.io/dance-of-the-compilers/'
-languageCode = 'en-us'
+baseURL = 'https://0xdrmnhttn13.github.io/dance-of-the-compilers/'
 title = 'Dance of the Compilers'
+disableKinds = ['taxonomy', 'term']
 
 [params]
   description = 'From algebra to silicon.'
