@@ -178,8 +178,7 @@ Now consider the $T$ gate:
 
 $$
 TXT^\dagger
-=
-\frac{X+Y}{\sqrt{2}}.
+= \frac{X+Y}{\sqrt{2}}.
 $$
 
 This is **not a Pauli operator**.
@@ -217,8 +216,7 @@ Therefore,
 
 $$
 |A\rangle
-=
-\frac{|0\rangle + e^{i\pi/4}|1\rangle}{\sqrt{2}}.
+= \frac{|0\rangle + e^{i\pi/4}|1\rangle}{\sqrt{2}}.
 $$
 
 This is a **magic state**.
@@ -364,8 +362,7 @@ $$
 p_{\text{out}}
 \approx
 35(10^{-3})^3
-=
-3.5\times10^{-8}.
+= 3.5\times10^{-8}.
 $$
 
 Fifteen imperfect states are consumed to produce roughly one much cleaner state, conditioned on the distillation checks accepting the batch.
@@ -422,8 +419,7 @@ This is why two compiler metrics become interesting.
 
 $$
 T\text{-count}
-=
-\text{number of } T \text{ gates}.
+= \text{number of } T \text{ gates}.
 $$
 
 Lower T-count means fewer magic states need to be consumed.
