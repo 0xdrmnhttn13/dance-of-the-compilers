@@ -6,6 +6,10 @@
   <meta name="description" content="{{ .Site.Params.description }}">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  {{ $noop := .WordCount }}
+  {{ if .Page.Store.Get "hasMath" }}
+  <link rel="stylesheet" href="{{ "katex/katex.min.css" | relURL }}">
+  {{ end }}
 </head>
 <body>
   <header class="site-header">
