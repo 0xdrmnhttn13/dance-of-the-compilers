@@ -1,7 +1,7 @@
 ---
 title: "Why Dance of the Compilers?"
 date: 2026-08-17
-description: "A public notebook for understanding computation from mathematics down to machines."
+description: "Why this site exists: computation as translation, and the ideas underneath the machines."
 ---
 
 I keep learning things that look unrelated: compilers, quantum computing, AI systems, mathematics, and low-level systems engineering.

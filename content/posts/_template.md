@@ -1,40 +1,30 @@
 ---
-title: "Post title"
+title: "Piece title"
 date: 2026-08-17
 draft: true
-description: "One sentence describing the question this note explores."
+description: "One sentence on what this piece is about."
 ---
 
-## The question
+## The idea
 
-What am I actually trying to understand?
+What am I actually trying to say?
 
-## Mental model
+## The story
 
-Explain it in my own words before hiding behind terminology.
+Tell it in my own words before hiding behind terminology.
 
-## Theory
+## What I believe
 
-Definitions, equations, and derivations.
+My current philosophy, stated plainly.
 
-## Tiny example
+## What changed my mind
 
-Use the smallest example that exposes the idea.
-
-## Implementation
-
-```cpp
-// Build the smallest thing that proves the mental model.
-```
-
-## What I got wrong
-
-What did I believe before studying this?
+What did I believe before, and why did it move?
 
 ## What I still don't understand
 
-Keep the unresolved questions explicit.
+Keep the open questions explicit.
 
 ## References
 
-- Paper / book / lecture / source code
+- Book / paper / film / code / anything that shaped it
