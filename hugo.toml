@@ -8,8 +8,7 @@ enableRobotsTXT = true
   description = 'From algebra to silicon.'
   author = 'M Sidik Augi Rahmat'
   subtitle = 'To arrive where we started, and know the machine for the first time.'
-
-enableRobotsTXT = true
+  googleSiteVerification = 'UpGRUFcsNb-hjzsX6PQLmsr1Brd9DvUK4s8AItJO0WA'
 
 [markup]
   [markup.highlight]
