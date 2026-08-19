@@ -1,12 +1,16 @@
 ---
 title: "About"
-description: "M Sidik Augi Rahmat — writer of Dance of the Compilers."
+description: "M Sidik Augi Rahmat — Dance of the Compilers."
 ---
 
 I am **M Sidik Augi Rahmat**.
 
-I studied the early foundations of fault-tolerant quantum computing during my master's degree, focusing on the physics. These days I work in high-frequency trading, close to systems and compilers.
+I began in physics, studying the foundations of fault-tolerant quantum computing — the fragile art of keeping information alive. Now I build systems in the world of high-frequency trading, where every nanosecond is spent like coin.
 
-This site is my personal book: compilers, quantum computing, mathematics, and the ideas underneath the machines — written in my own words and revised as my understanding changes.
+Between those two worlds I keep finding the same shape: one representation of a thing, transformed into another, its meaning intact. Source into machine. Circuit into resource. Silence into signal.
 
-You can find me on [GitHub](https://github.com/0xdrmnhttn13).
+This site is where I follow that shape. Compilers, quantum computing, mathematics — the grammar underneath the machinery. I write to find out what I think, and rewrite to find out what I thought.
+
+> We shall not cease from exploration.
+
+Find me on [GitHub](https://github.com/0xdrmnhttn13).
