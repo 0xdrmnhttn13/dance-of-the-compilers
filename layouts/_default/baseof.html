@@ -3,20 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ .Site.Params.description }}">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  <title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.author }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
   {{ $noop := .WordCount }}
   {{ if .Page.Store.Get "hasMath" }}
   <link rel="stylesheet" href="{{ "katex/katex.min.css" | relURL }}">
+  {{ end }}
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta name="twitter:card" content="summary">
+  {{ with .Site.Params.author }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ . }}",
+    "url": "{{ site.BaseURL }}",
+    "jobTitle": "Engineer",
+    "knowsAbout": ["compilers", "quantum computing", "high-frequency trading", "mathematics"],
+    "sameAs": ["https://github.com/0xdrmnhttn13"]
+  }
+  </script>
+  {{ end }}
+  {{ with .Site.Params.googleSiteVerification }}
+  <meta name="google-site-verification" content="{{ . }}">
   {{ end }}
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="{{ .Site.Home.RelPermalink }}">Dance of the Compilers</a>
     <span class="tagline">From algebra to silicon.</span>
+    <nav class="site-nav">
+      <a href="{{ "about" | relURL }}">About</a>
+    </nav>
   </header>
   <main>{{ block "main" . }}{{ end }}</main>
-  <footer>A personal book, written and revised in public.</footer>
+  <footer>&copy; {{ now.Year }} M Sidik Augi Rahmat · A personal book, written and revised in public.</footer>
 </body>
 </html>

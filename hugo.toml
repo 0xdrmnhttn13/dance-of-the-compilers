@@ -2,9 +2,14 @@ baseURL = 'https://0xdrmnhttn13.github.io/dance-of-the-compilers/'
 title = 'Dance of the Compilers'
 disableKinds = ['taxonomy', 'term']
 
+enableRobotsTXT = true
+
 [params]
   description = 'From algebra to silicon.'
-  author = 'Augi'
+  author = 'M Sidik Augi Rahmat'
+  subtitle = 'To arrive where we started, and know the machine for the first time.'
+
+enableRobotsTXT = true
 
 [markup]
   [markup.highlight]
