@@ -19,4 +19,6 @@ Silence into signal.
 This is a record of what remains\
 after abstraction has burned everything else away.
 
+> We shall not cease from exploration.
+
 Find me on [GitHub](https://github.com/0xdrmnhttn13).
